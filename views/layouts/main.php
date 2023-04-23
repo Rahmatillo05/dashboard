@@ -1,9 +1,11 @@
 <?php
 
 /** @var yii\web\View $this */
+
 /** @var string $content */
 
 use codecrafter\dashboard\CrafterAssets;
+use codecrafter\dashboard\widgets\Header;
 use yii\bootstrap5\Html;
 
 CrafterAssets::register($this);
@@ -23,9 +25,10 @@ $this->registerMetaTag(['name' => 'keywords', 'content' => $this->params['meta_k
 </head>
 <body data-sidebar="dark">
 <?php $this->beginBody() ?>
-
-<?= $content ?>
-
+<div id="layout-wrapper">
+    <?= Header::widget() ?>
+    <?= $content ?>
+</div>
 <?php $this->endBody() ?>
 </body>
 </html>
