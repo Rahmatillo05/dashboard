@@ -1,0 +1,21 @@
+{
+    "name": "codecrafter/yii2-crafter-dashboard",
+    "description": "Beautiful and fast dashboard for yii2-app",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"," dashboard"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rahmatullo",
+            "email": "husanboyev2oo5@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "codecrafter\\dashboard\\": ""
+        }
+    }
+}
